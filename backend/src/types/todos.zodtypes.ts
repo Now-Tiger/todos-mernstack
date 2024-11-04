@@ -2,7 +2,7 @@ import { z } from "zod";
 
 export const createTodo = z.object({
   title: z.string().trim().min(3, { message: "title length should be more than 3" }),
-  description: z.string().trim().min(3, { message: "title length should be more than 3" })
+  description: z.string().trim().min(3, { message: "description length should be more than 3" })
 })
 
 export const updateTodo = z.object({
